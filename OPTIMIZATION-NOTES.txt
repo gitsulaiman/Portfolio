@@ -1,0 +1,27 @@
+PORTFOLIO OPTIMIZATION NOTES
+
+What changed
+- Removed Markdown code fences accidentally included in index.html.
+- Removed embedded duplicate project CSS and consolidated project styles in portfolio-enhancements.css.
+- Removed obsolete project CSS overrides and unused achievement-counter JavaScript.
+- Kept one project-slider implementation in script.js; removed duplicate inline slider code.
+- Fixed the case-sensitive logo filename issue by using assets/logo.webp.
+- Converted retained images to optimized WebP and removed the unused project1.png.
+- Added canonical, robots, Open Graph, Twitter card and Person structured data metadata.
+- Added robots.txt, sitemap.xml and an SVG favicon.
+- Added a skip link and referrer policy.
+- Added input length limits to the contact form.
+
+Security notes
+- This is a static front-end portfolio. It does not contain a server-side contact endpoint.
+- The contact form uses the visitor's email application via mailto; it does not securely transmit/store messages itself.
+- Do not place API keys, passwords, database credentials, private tokens or .env secrets in this public repository.
+- GitHub Pages does not provide per-site HTTP security headers from these files. Configure headers at a hosting/CDN layer if you move to a host that supports them.
+- External libraries still load from their public CDNs. Review/update dependencies periodically; use pinned versions and Subresource Integrity where supported.
+- SEO metadata and sitemap improve crawlability but do not guarantee indexing or rankings.
+
+Before publishing
+- Confirm the canonical URL and GitHub Pages URL are still correct.
+- Replace placeholder # links for Job Tracker and Electrotech India when their real project URLs are ready.
+- Verify the contact email address in script.js.
+- Test all navigation, project links, certificates and the resume on the live site.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gitsuleman.github.io/Portfolio/sitemap.xml
